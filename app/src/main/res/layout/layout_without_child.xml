@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/colorGrey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/colorBlack"
+            android:layout_marginLeft="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_item_text"
+            android:padding="8dp"
+            android:text="This is item without child"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

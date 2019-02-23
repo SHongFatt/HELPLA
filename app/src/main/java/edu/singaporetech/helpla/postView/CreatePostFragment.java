@@ -1,4 +1,5 @@
-package edu.singaporetech.helpla;
+package edu.singaporetech.helpla.postView;
+
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,27 +7,25 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import edu.singaporetech.helpla.R;
 
 
-public class LeadershiipBoardFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class CreatePostFragment extends Fragment {
 
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-
+    public CreatePostFragment() {
+        // Required empty public constructor
+    }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_leadershiip_board, container, false);
+        return inflater.inflate(R.layout.fragment_create_post, container, false);
     }
-
-
-
 
 }

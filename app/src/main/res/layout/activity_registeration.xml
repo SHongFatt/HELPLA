@@ -6,20 +6,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:hint="@string/name_hint"
+        android:id="@+id/name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username_hint"
+        android:inputType="textEmailAddress"
         android:id="@+id/email"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
         android:id="@+id/password"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password_hint"
+        android:inputType="textPassword"
+        android:id="@+id/cpw"/>
+
+
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="@string/registration"
         android:onClick="registerWithEmail"/>
+
 
 </LinearLayout>

@@ -8,6 +8,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import edu.singaporetech.helpla.homeView.HomeFragment;
+import edu.singaporetech.helpla.leadershipBoard.LeadershipBoardFragment;
+import edu.singaporetech.helpla.notificationView.NotificaitonFragment;
+import edu.singaporetech.helpla.postView.CreatePostFragment;
+import edu.singaporetech.helpla.profileView.ProfileFragment;
 
 public class IndexActivity extends AppCompatActivity {
 
@@ -30,19 +35,23 @@ public class IndexActivity extends AppCompatActivity {
                     String tag = "";
                     switch (item.getItemId()){
                         case R.id.nav_index:
-                            tag = "index";
+                            tag = "Index";
                             selectedFragment = new HomeFragment();
                             break;
-                        case R.id.nav_trips:
-                            tag = "trips";
-                            selectedFragment = new LeadershiipBoardFragment();
+                        case R.id.nav_leadership:
+                            tag = "Leadership";
+                            selectedFragment = new LeadershipBoardFragment();
                             break;
-                        case R.id.nav_strips:
-                            tag = "shareTrips";
-                              selectedFragment = new CreatePostFragment();
+                        case R.id.nav_create:
+                            tag = "Create";
+                            selectedFragment = new CreatePostFragment();
+                            break;
+                        case R.id.nav_notificaiton:
+                            tag = "Notification";
+                            selectedFragment = new NotificaitonFragment();
                             break;
                         case R.id.nav_profile:
-                            tag = "profile";
+                            tag = "Profile";
                             selectedFragment = new ProfileFragment();
                             break;
 

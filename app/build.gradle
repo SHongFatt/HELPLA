@@ -36,6 +36,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:16.0.1'
     implementation 'com.google.firebase:firebase-auth:16.1.0'
     implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.7.3'
+
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
 apply plugin: 'com.google.gms.google-services'
 com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
